@@ -1,3 +1,5 @@
+//written by johnny prencipe && zach harrison dec 2 2020
+
 const wordSearch = (letters, word) => {
   const horizontalJoin = letters.map(ls => ls.join(''))
   for (let l of horizontalJoin) {
