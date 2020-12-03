@@ -3,6 +3,8 @@ const assert = chai.assert;
 
 const wordSearch = require('../wordsearch.js')
 
+
+
 describe("#wordSearch()", function() {
   it("should return false if the word is not present", function() {
     const result = wordSearch([
@@ -34,5 +36,14 @@ describe("#wordSearch()", function() {
     ], 'SEINFELD')
 
     assert.isTrue(result);
+  });
+
+  it('Should return true with "zach"', function () {
+    const result = wordSearch([
+      ['z', 'r', 't'],
+      ['a', 'r', 't'],
+      ['c', 'r', 't'],
+      ['h', 'r', 't'],
+    ], 'zach')
   });
 });
